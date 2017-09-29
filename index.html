@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Front Login</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <style type="text/css">
+    	form .error {
+    		color: red;
+    	}
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+	<div class="container w-50">
+		<div class="row box">
+		    <div class="col">
+		 		<p class="lead text-center text-primary display-4">Get In Touch</p>
+		 	</div>
+		 </div>
+		 <div class="row my-3">
+		 	<div class="col my-2">
+
+		 		<form name="form1" id="form1" onsubmit="return false">
+		 			<input type="text" class="form-control form-control-lg my-2" name="firstname" placeholder="First Name" id="firstname" >
+		 			 <p class="text-danger" id="firstnameerror"></p> 
+		 			<input type="text" class="form-control form-control-lg my-2" name="lastname" placeholder="Last Name"  id="lastname">
+		 			<p class="text-danger"  id="lastnameerror"></p> 
+		 			<div class="row">
+		 				<div class="col-md-6 col-sm-12 col-xs-12">
+		 					<input type="email" name="mail" class="form-control form-control-lg  my-2" placeholder="Your Email" id="mail">
+		 					<p class="text-danger" id="mailerror"></p>
+		 				</div>
+		 				<div class="col-md-6 col-sm-12 col-xs-12">
+		 					<input type="password" name="securepassword" class="form-control form-control-lg  my-2" placeholder="Your Password" id="securepassword">
+		 					<p class="text-danger" id="securepassworderror"></p>
+		 				</div>
+		 			</div>
+		 			<input type="text" name="txtaddress1" class="form-control form-control-lg my-2" placeholder="Address1" id="txtaddress1">
+		 			<p class="text-danger" id="textaddress1error"></p>
+		 			<input type="text" name="txtaddress2" class="form-control form-control-lg my-2" placeholder="Address2" id="txtaddress2">
+		 			<p class="text-danger" id="textaddress2error"></p> 
+		 			<div class="row"> 
+		 				<div class="col-md-4 col-sm-12 col-xs-12">
+		 					<div class="form-group">
+		 				    	<label for="inputcity" class="col-form-label">City</label>
+		 						<select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0 form-control-lg" id="city" name="city">
+		 					    	<option value="" selected>Choose...</option>
+		 							<option value="India">India</option>
+		 							<option value="UAE">UAE</option>
+		 							<option value="US">US</option>
+		 							<option value="UK">UK</option>
+		 							<option value="France">France</option>
+		 							<option value="Pakistan">Pakistan</option>
+		 							<option value="China">China</option>
+		 							<option value="Japan">Japan</option>
+		 							<option value="Nepal">Nepal</option>
+		 							<option value="Afghan">Afghan</option>
+		 						</select>
+		 						
+		 					</div>
+		 					<p class="text-danger" id="entercity"></p>
+		 				</div>
+		 				<div class="col-md-4 col-sm-12 col-xs-12">
+		 					<div class="form-group">
+		 				 		<label for="inputstate" class="col-form-label">State</label>
+		 				 		<select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0 form-control-lg" id="state" name="state">
+		 				 	    	<option value="" selected>Choose...</option>
+		 							<option value="TamilNadu">TamilNadu</option>
+		 							<option value="Mumbai">Mumbai</option>
+		 							<option value="AP">AP</option>
+		 							<option value="UP">UP</option>
+		 							<option value="MP">MP</option>
+		 							<option value="Kashmir">Kashmir</option>
+		 							<option value="Telugana">Telugana</option>
+		 							<option value="Karnataka">Karnataka</option>
+		 							<option value="Kerela">Kerela</option>
+		 							<option value="Assam">Assam</option>
+		 						</select>
+		 						
+		 					</div>
+		 					<p class="text-danger" id="enterstate"></p>
+		 				</div>
+		 				<div class="col-md-4 col-sm-12 col-xs-12">
+		 					<label for="inputgender" class="col-form-label">Gender</label>
+		 					<select class="form-control custom-select mb-2 mr-sm-2 mb-sm-0 form-control-lg" id="gender" name="gender">
+		 							<option value="" selected>Choose...</option>
+		 							<option value="TamilNadu">Male</option>
+		 							<option value="Mumbai">Female</option>
+		 							<option value="AP">Others</option>
+		 							
+		 					</select>
+		 					<p class="text-danger" id="entergender"></p>
+		 				</div>
+		 			</div>
+		 			<div class="form-group">
+		 				<div class="form-check">
+		 					<label class="form-check-label">
+		 						<input type="checkbox" class="form-check-input" name="check" id="check">check me out
+		 					</label>
+		 					<p class="text-danger" id="check"></p>
+		 				</div>
+		 			</div>
+		 			<input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg" value="Sign in">
+		 		</form>
+		 	</div>
+		 </div>
+	</div>
+</div>
+
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <!--  <script type="text/javascript" src="script.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+
+   <script src="validation.js"></script>
+</body>
+</html>
